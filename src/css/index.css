@@ -35,15 +35,18 @@ body {
   border: 3px solid white;
   background-size: 30rem 25rem;
   background-repeat: no-repeat;
-
 }
 
-.ticketDetails{
+.ticketDetails {
   background: linear-gradient(to right, #f60637, #3a2edc);
-  border-bottom: 2px solid white ;
-  border-top: 2px solid white ;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
 }
 
-.ticketDetails2{
-  background: linear-gradient(to right, #3a2edc,#f60637);
+.ticketDetails2 {
+  background: linear-gradient(to right, #3a2edc, #f60637);
+}
+
+.eventFormBg {
+  
 }

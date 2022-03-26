@@ -8,61 +8,126 @@ import FormControl from "@mui/material/FormControl";
 
 export const EventForm = () => {
   return (
-    <Paper>
-      <Typography variant="h6"> Create an event </Typography>
-      <TextField id="outlined-basic" label="Title" variant="outlined" />
-      <TextField id="outlined-basic" label="Discriptioin" variant="outlined" />
-      <TextField id="outlined-basic" label="Seats" variant="outlined" />
-      <TextField
-        id="outlined-basic"
-        label="Event Location"
-        variant="outlined"
-      />
-      <FormControl fullWidth sx={{ m: 1 }} variant="standard">
-        <InputLabel htmlFor="standard-adornment-amount">Amount</InputLabel>
-        <Input
-          id="standard-adornment-amount"
-          startAdornment={<InputAdornment position="start">$</InputAdornment>}
-        />
-      </FormControl>
+    <div className="eventFormBg">
+      <Paper>
+        <Typography
+          variant="h6"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            fontSize: "2.2rem",
+            marginTop: "2rem",
+            marginBottom: "1rem",
+          }}
+        >
+          {" "}
+          Create an event{" "}
+        </Typography>
+        <div style={{ marginTop: "1rem" }}></div>
+        <div style={{ margin: "3rem 10rem" }}>
+          <TextField
+            id="outlined-basic"
+            label="Title"
+            variant="outlined"
+            style={{ marginLeft: "2rem", marginRight: "1rem" }}
+          />
+          <TextField
+            id="outlined-basic"
+            label="Discriptioin"
+            variant="outlined"
+            style={{ marginLeft: "2rem", marginRight: "1rem" }}
+          />
+          <TextField
+            id="outlined-basic"
+            label="Seats"
+            variant="outlined"
+            style={{ marginLeft: "2rem", marginRight: "1rem" }}
+          />
+          <TextField
+            id="outlined-basic"
+            label="Event Location"
+            variant="outlined"
+            style={{ marginLeft: "2rem", marginRight: "1rem" }}
+          />
+        </div>
+        <FormControl
+          fullWidth
+          sx={{ m: 1 }}
+          variant="standard"
+          style={{ marginBottom: "2rem" }}
+        >
+          <InputLabel htmlFor="standard-adornment-amount">Amount</InputLabel>
+          <Input
+            id="standard-adornment-amount"
+            startAdornment={<InputAdornment position="start">$</InputAdornment>}
+          />
+        </FormControl>
 
-      <FormControl fullWidth sx={{ m: 1 }} variant="standard">
-        <InputLabel htmlFor="standard-adornment-amount">Timestamp</InputLabel>
-        <Input
-          id="standard-adornment-amount"
-          startAdornment={<InputAdornment position="start"></InputAdornment>}
-        />
-      </FormControl>
+        <FormControl
+          fullWidth
+          sx={{ m: 1 }}
+          variant="standard"
+          style={{ marginBottom: "2rem" }}
+        >
+          <InputLabel htmlFor="standard-adornment-amount">Timestamp</InputLabel>
+          <Input
+            id="standard-adornment-amount"
+            startAdornment={<InputAdornment position="start"></InputAdornment>}
+          />
+        </FormControl>
 
-      <FormControl fullWidth sx={{ m: 1 }} variant="standard">
-        <InputLabel htmlFor="standard-adornment-amount">
-          No. of tickets
-        </InputLabel>
-        <Input
-          id="standard-adornment-amount"
-          startAdornment={<InputAdornment position="start"></InputAdornment>}
+        <FormControl
+          fullWidth
+          sx={{ m: 1 }}
+          variant="standard"
+          style={{ marginBottom: "2rem" }}
+        >
+          <InputLabel htmlFor="standard-adornment-amount">
+            No. of tickets
+          </InputLabel>
+          <Input
+            id="standard-adornment-amount"
+            startAdornment={<InputAdornment position="start"></InputAdornment>}
+          />
+        </FormControl>
+        <FormControl
+          fullWidth
+          sx={{ m: 1 }}
+          variant="standard"
+          style={{ marginBottom: "2rem" }}
+        >
+          <InputLabel htmlFor="standard-adornment-amount">
+            No. os tickets Sold
+          </InputLabel>
+          <Input
+            id="standard-adornment-amount"
+            startAdornment={<InputAdornment position="start"></InputAdornment>}
+          />
+        </FormControl>
+        <TextField
+          id="outlined-basic"
+          label="Link to join events for attendees"
+          variant="outlined"
+          style={{
+            justifyContent: "center",
+            display: "flex",
+            margin: "0 17rem",
+          }}
         />
-      </FormControl>
-      <FormControl fullWidth sx={{ m: 1 }} variant="standard">
-        <InputLabel htmlFor="standard-adornment-amount">
-          No. os tickets Sold
-        </InputLabel>
-        <Input
-          id="standard-adornment-amount"
-          startAdornment={<InputAdornment position="start"></InputAdornment>}
-        />
-      </FormControl>
-      <TextField
-        id="outlined-basic"
-        label="Link to join events for attendees"
-        variant="outlined"
-      />
 
-      <div></div>
+        <div style={{ marginTop: "1rem" }}></div>
 
-      <Button variant="contained" href="#contained-buttons">
-        Create event
-      </Button>
-    </Paper>
+        <Button
+          variant="contained"
+          href="#contained-buttons "
+          style={{
+            margin: "1rem 40rem",
+            width: "10rem",
+          }}
+        >
+          Create event
+        </Button>
+      </Paper>
+    </div>
   );
 };
