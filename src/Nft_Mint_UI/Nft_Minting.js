@@ -6,8 +6,6 @@ import config from "../config/config";
 import html2canvas from "html2canvas";
 import firebase from "firebase";
 
-
-
 const client = new NFTStorage({
   token:
     "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweGFDQmEwMDVCYTM5YTVhMzEwQzVCNDk5RTQ1NWNGNkY4QzJmMjA0YjAiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTY0ODI2MDEwNTM0MywibmFtZSI6IlRlenRpY2sifQ.7csyuIYzuN22lTH2wWoqT1OYFwxivBsXsNujRFfYy-E",
@@ -25,9 +23,15 @@ const NftMinting = () => {
       async (blob) => {
         let file = new File([blob], "ChessPosNft.png", { type: "image/png" });
         const metadata = await client.store({
-          name: "chessPos position NFT",
+          title: "chessPos position NFT",
           description: description,
           image: file,
+          seats: "",
+          eventLocation: "",
+          amount: "",
+          timestamp: "",
+          tickets: "",
+          ticketSold: "",
         });
         console.log("metadata:", metadata.ipnft);
         try {
@@ -59,15 +63,15 @@ const NftMinting = () => {
                       file: url,
                       uri: chessGame1.fen(),
                       metadataUri: metadata.ipnft,
-                      white: game.white.toLowerCase(),
-                      black: game.black.toLowerCase(),
-                      amountAtStake: game.amount,
-                      createdAt: new Date(),
-                      winner: game.winner,
-                      txnHash: recipt.transactionHash,
-                      creator: account.toLowerCase(),
-                      owner: account.toLowerCase(),
-                      type: "position",
+                      title: "chessPos position NFT",
+                      description: description,
+                      image: file,
+                      seats: "",
+                      eventLocation: "",
+                      amount: "",
+                      timestamp: "",
+                      tickets: "",
+                      ticketSold: "",
                     })
                     .then(() => {
                       alert("Your position's NFT is minted successfully.");
