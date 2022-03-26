@@ -49,17 +49,38 @@ body {
 }
 
 .ticketDetails {
-  background: linear-gradient(to right, #f60637, #3a2edc);
+  background: #005c97; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #363795,
+    #005c97
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #363795,
+    #005c97
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   border-bottom: 2px solid white;
   border-top: 2px solid white;
 }
 
 .ticketDetails2 {
-  background: linear-gradient(to right, #3a2edc, #f60637);
+  background: #005c97; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #363795,
+    #005c97
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #363795,
+    #005c97
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.eventDiv{
+.eventDiv {
   background: #0f111a;
   border-radius: 25px;
-  border: 3px solid white
+  border: 3px solid white;
 }

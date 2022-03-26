@@ -4,6 +4,7 @@ import LandingPage from "./components/LandingPage";
 import HomePage from "./components/homePage/homePage";
 import YourNft from "./components/YourNft";
 import { Route, Routes } from "react-router-dom";
+import SingleNft from "./components/singleNft";
 
 function App() {
   return (
@@ -18,6 +19,10 @@ function App() {
         <Route exact path="/create-event" element={<EventForm />}></Route>
         <Route exact path="/nft-minting" element={<YourNft />}></Route>
       </Routes>
+      {/* <LandingPage /> */}
+      {/* <EventForm /> */}
+      {/* <HomePage/> */}
+      {/* <SingleNft /> */}
     </div>
   );
 }
