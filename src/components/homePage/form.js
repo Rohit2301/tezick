@@ -2,6 +2,7 @@ import { Button, Paper, Typography } from "@material-ui/core";
 import TextField from "@mui/material/TextField";
 import * as React from "react";
 import Input from "@mui/material/Input";
+
 import InputLabel from "@mui/material/InputLabel";
 import InputAdornment from "@mui/material/InputAdornment";
 import FormControl from "@mui/material/FormControl";
@@ -33,13 +34,7 @@ export const EventForm = () => {
           />
           <TextField
             id="outlined-basic"
-            label="Discriptioin"
-            variant="outlined"
-            style={{ marginLeft: "2rem", marginRight: "1rem" }}
-          />
-          <TextField
-            id="outlined-basic"
-            label="Seats"
+            label="Description"
             variant="outlined"
             style={{ marginLeft: "2rem", marginRight: "1rem" }}
           />
@@ -60,19 +55,6 @@ export const EventForm = () => {
           <Input
             id="standard-adornment-amount"
             startAdornment={<InputAdornment position="start">$</InputAdornment>}
-          />
-        </FormControl>
-
-        <FormControl
-          fullWidth
-          sx={{ m: 1 }}
-          variant="standard"
-          style={{ marginBottom: "2rem" }}
-        >
-          <InputLabel htmlFor="standard-adornment-amount">Timestamp</InputLabel>
-          <Input
-            id="standard-adornment-amount"
-            startAdornment={<InputAdornment position="start"></InputAdornment>}
           />
         </FormControl>
 
@@ -104,16 +86,20 @@ export const EventForm = () => {
             startAdornment={<InputAdornment position="start"></InputAdornment>}
           />
         </FormControl>
-        <TextField
-          id="outlined-basic"
-          label="Link to join events for attendees"
-          variant="outlined"
-          style={{
-            justifyContent: "center",
-            display: "flex",
-            margin: "0 17rem",
-          }}
-        />
+        <FormControl
+          fullWidth
+          sx={{ m: 1 }}
+          variant="standard"
+          style={{ marginBottom: "2rem" }}
+        >
+          <InputLabel htmlFor="standard-adornment-amount">
+            No. of days
+          </InputLabel>
+          <Input
+            id="standard-adornment-amount"
+            startAdornment={<InputAdornment position="start"></InputAdornment>}
+          />
+        </FormControl>
 
         <div style={{ marginTop: "1rem" }}></div>
 
