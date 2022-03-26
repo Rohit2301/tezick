@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../Navbar";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -28,12 +29,15 @@ const HomePage = () => {
         >
           TezTick
         </span>
-        <div
-          className="outlineButton"
-          style={{ width: "20rem", height: "4rem" }}
-        >
-          <span style={{ fontSize: "24px" }}>Create Event</span>
-        </div>
+        <Link to="/create-event" style={{ textDecoration: "none" }}>
+          <div
+            className="outlineButton"
+            style={{ width: "20rem", height: "4rem" }}
+          >
+            <span style={{ fontSize: "24px" }}>Create Event</span>
+          </div>
+        </Link>
+
         <div
           style={{
             display: "flex",
@@ -72,13 +76,16 @@ const EventDiv = () => {
             display: "flex",
             flexDirection: "row",
             alignItems: "baseline",
-            margin: "0.5rem 0rem"
+            margin: "0.5rem 0rem",
           }}
         >
           <span className="normalText" style={{ fontSize: "16px" }}>
             Event Time :
           </span>
-          <span className="normalText" style={{ fontSize: "20px", marginLeft: "1rem" }}>
+          <span
+            className="normalText"
+            style={{ fontSize: "20px", marginLeft: "1rem" }}
+          >
             31 December
           </span>
         </div>
@@ -87,13 +94,16 @@ const EventDiv = () => {
             display: "flex",
             flexDirection: "row",
             alignItems: "baseline",
-            margin: "0.5rem 0rem"
+            margin: "0.5rem 0rem",
           }}
         >
           <span className="normalText" style={{ fontSize: "16px" }}>
             Event Place :
           </span>
-          <span className="normalText" style={{ fontSize: "20px", marginLeft: "1rem" }}>
+          <span
+            className="normalText"
+            style={{ fontSize: "20px", marginLeft: "1rem" }}
+          >
             Connaught Place
           </span>
         </div>
@@ -102,13 +112,16 @@ const EventDiv = () => {
             display: "flex",
             flexDirection: "row",
             alignItems: "baseline",
-            margin: "0.5rem 0rem"
+            margin: "0.5rem 0rem",
           }}
         >
           <span className="normalText" style={{ fontSize: "16px" }}>
             Event Name :
           </span>
-          <span className="normalText" style={{ fontSize: "20px", marginLeft: "1rem" }}>
+          <span
+            className="normalText"
+            style={{ fontSize: "20px", marginLeft: "1rem" }}
+          >
             New Year Party
           </span>
         </div>
@@ -117,13 +130,16 @@ const EventDiv = () => {
             display: "flex",
             flexDirection: "row",
             alignItems: "baseline",
-            margin: "0.5rem 0rem"
+            margin: "0.5rem 0rem",
           }}
         >
           <span className="normalText" style={{ fontSize: "16px" }}>
             Creator :
           </span>
-          <span className="normalText" style={{ fontSize: "20px", marginLeft: "1rem" }}>
+          <span
+            className="normalText"
+            style={{ fontSize: "20px", marginLeft: "1rem" }}
+          >
             0xjdhasjdjajd
           </span>
         </div>
@@ -132,20 +148,27 @@ const EventDiv = () => {
             display: "flex",
             flexDirection: "row",
             alignItems: "baseline",
-            margin: "0.5rem 0rem"
+            margin: "0.5rem 0rem",
           }}
         >
           <span className="normalText" style={{ fontSize: "16px" }}>
             Tickets Sold :
           </span>
-          <span className="normalText" style={{ fontSize: "20px", marginLeft: "1rem" }}>
+          <span
+            className="normalText"
+            style={{ fontSize: "20px", marginLeft: "1rem" }}
+          >
             2/60
           </span>
         </div>
-        <div className="outlineButton" style={{width: "8rem", height: "2rem", marginTop: "2rem"}}>
-        <span style={{ fontSize: "18px" }}>Buy Ticket</span>
-        </div>
-        
+        <Link to="/nft-minting" style={{ textDecoration: "none" }}>
+          <div
+            className="outlineButton"
+            style={{ width: "8rem", height: "2rem", marginTop: "2rem" }}
+          >
+            <span style={{ fontSize: "18px" }}>Buy Ticket</span>
+          </div>
+        </Link>
       </div>
     </div>
   );

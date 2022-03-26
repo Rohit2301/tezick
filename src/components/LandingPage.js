@@ -40,7 +40,7 @@ const LandingPage = () => {
           <span className="normalText" style={{ fontSize: "40px" }}>
             Your one way to your Favourite Event
           </span>
-          <Link to="/home-page">
+          <Link to="/home-page" style={{textDecoration: "none"}}>
             <div
               className="outlineButton"
               style={{

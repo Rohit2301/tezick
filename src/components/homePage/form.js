@@ -9,7 +9,7 @@ import FormControl from "@mui/material/FormControl";
 export const EventForm = () => {
   return (
     <div className="eventFormBg">
-      <Paper>
+      <Paper sx={{background: "blue"}}>
         <Typography
           variant="h6"
           style={{
