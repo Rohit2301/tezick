@@ -1,7 +1,7 @@
 import React from "react";
-import { EventForm } from "./homePage/form";
+import {EventForm} from "./components/homePage/form";
 import LandingPage from "./components/LandingPage";
-import HomePage from "./homePage/homePage";
+import HomePage from "./components/homePage/homePage";
 
 function App() {
   return (

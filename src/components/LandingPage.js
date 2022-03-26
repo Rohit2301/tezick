@@ -1,5 +1,6 @@
 import React from "react";
 import ticketBg from "../img/mainTicket.jpg";
+import Navbar from "./Navbar";
 
 const LandingPage = () => {
   return (
@@ -12,22 +13,7 @@ const LandingPage = () => {
         alignItems: "center",
       }}
     >
-      <div
-        className="outlineButton"
-        style={{
-          position: "absolute",
-          right: "20px",
-          top: "20px",
-          width: "15rem",
-          height: "4rem",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <span style={{ fontSize: "24px" }}>Connect Wallet</span>
-      </div>
+      <Navbar></Navbar>
       <div
         style={{
           display: "flex",
