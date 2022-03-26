@@ -9,7 +9,7 @@ import FormControl from "@mui/material/FormControl";
 export const EventForm = () => {
   return (
     <div className="eventFormBg">
-      <Paper sx={{background: "blue"}}>
+      <Paper sx={{ background: "blue" }}>
         <Typography
           variant="h6"
           style={{
@@ -97,7 +97,7 @@ export const EventForm = () => {
           style={{ marginBottom: "2rem" }}
         >
           <InputLabel htmlFor="standard-adornment-amount">
-            No. os tickets Sold
+            No. of tickets Sold
           </InputLabel>
           <Input
             id="standard-adornment-amount"
