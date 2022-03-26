@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from "react";
 import ticketBg from "../img/mainTicket.jpg";
 import Navbar from "./Navbar";
@@ -39,6 +40,18 @@ const LandingPage = () => {
           <span className="normalText" style={{ fontSize: "40px" }}>
             Your one way to your Favourite Event
           </span>
+          <Link to="/home-page">
+            <div
+              className="outlineButton"
+              style={{
+                width: "15rem",
+                height: "4rem",
+                marginTop: "2rem",
+              }}
+            >
+              <span style={{ fontSize: "24px" }}>Enter DApp</span>
+            </div>
+          </Link>
         </div>
         <div className="ticket" style={{ height: "32.6rem", width: "25%" }}>
           <div
